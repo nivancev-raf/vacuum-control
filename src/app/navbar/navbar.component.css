@@ -1,0 +1,64 @@
+/* Style for the navbar container */
+.nav-wrapper {
+    background-color: #0D47A1; /* A darker shade of blue */
+    padding: 0 20px;
+  }
+  
+  .brand-section {
+    text-align: left;
+    padding: 10px 0;
+  }
+  
+  .brand-logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #FFFFFF; /* White color for contrast */
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  .nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    background-color: #1565C0; /* Slightly different shade for the menu */
+  }
+  
+  .nav-menu li {
+    margin: 0 15px;
+  }
+  
+  .nav-menu li a {
+    color: #FFFFFF; /* White color for text */
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .nav-menu li a:hover {
+    background-color: #1E88E5; /* Hover effect */
+  }
+  
+  /* Make navbar sticky (fixed at the top) */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .nav-menu {
+      flex-direction: column;
+    }
+  
+    .nav-menu li {
+      margin: 5px 0;
+    }
+  }
+  
